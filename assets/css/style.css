@@ -715,3 +715,106 @@ font-size: 1.08rem;
 .result-table .container .row .table tbody th {
     color: var(--text-secondary);
 }
+
+/* Notice Section  */
+
+.notice{
+    margin-top: 1.5rem;
+}
+
+.notice .container .row .card {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    margin: 1rem 0rem;
+    padding: 1.5rem;
+    border: 1px solid var(--secondary-color);
+    transition: all .3s ease-in-out;
+}
+
+.notice .container .row .card:hover {
+    border: 1px solid var(--secondary-color);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.notice .container .row .card:hover .date {
+    background-color: #c0e9a2;
+}
+
+.notice .container .row .card .date {
+    border: 1px solid var(--secondary-color);
+    height: 5rem;
+    width: 7rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: .2rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all .3s ease-in-out;
+}
+
+.notice .container .row .card .date .month{
+    color: var(--primary-color);
+    position: relative;
+    top: 12%;
+    font-weight: bolder;
+}
+
+.notice .container .row .card .date .day{
+    position: relative;
+    bottom: 15%;
+}
+
+.notice .container .row .card .date span{
+    color: var(--primary-color);
+    position: relative;
+    bottom: 17%;
+    font-size: .95rem;
+    font-weight: bold;
+}
+
+.notice .container .row .card .content .title {
+    color: var(--text-secondary);
+    font-size: 1.1rem;
+    transition: all .3s ease-in-out;
+}
+
+.notice .container .row .card .content .title:hover {
+    color: var(--secondary-color);
+    
+}
+
+.notice .container .row .card .button .btn {
+    width: 11.2rem;
+    
+}
+
+.notice-pagination .container .row .page-area{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.notice-pagination .pagination .page-item a{
+    border: 1px solid var(--secondary-color);
+    border-radius: 5px;
+    color: var(--primary-color);
+    font-weight: bold;
+    margin: 0rem .02rem;
+    transition: all .4s ease-in-out;
+    font-size: 1.2rem;
+}
+
+.notice-pagination .pagination .page-item a:focus{
+    box-shadow: none;
+    background-color: transparent;
+}
+
+.notice-pagination .pagination .page-item a.active,
+.notice-pagination .pagination .page-item a:hover {
+    background-color: #c0e9a2;
+}

@@ -130,5 +130,20 @@
     width: 100%;
 }
 
+/* Notice Section  */
+
+.notice .container .row .card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+}
+
+.notice .container .row .card .date,
+.notice .container .row .card .content,
+.notice .container .row .card .button {
+    margin: .5rem 0rem;
+}
+
 
 }
