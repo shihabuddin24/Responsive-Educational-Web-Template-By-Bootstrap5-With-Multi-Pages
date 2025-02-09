@@ -1,0 +1,717 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1.1rem;
+    letter-spacing: .12rem;
+    overflow: visible;
+}
+
+:root {
+    --primary-color: #057dc7;
+    --secondary-color: #58b411;
+    --text-primary: #3d3c3c;
+    --text-secondary: #757575;
+    --footer-bg: linear-gradient(#057dc7, #58b411);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: var(--primary-color);
+}
+
+p {
+    color: var(--text-secondary);
+    font-weight: 100;
+    letter-spacing: .05rem;
+    font-size: medium;
+}
+
+.navbar {
+    box-shadow: 0px 1px 9px 1px rgba(0, 0, 0, 0.2);
+}
+
+/* Navbar toggler er border remove korar jonno */
+.navbar-toggler {
+    border: none;
+}
+
+.navbar-toggler i {
+    color: var(--secondary-color);
+}
+
+/* Toggler focus hole egulo dara remove kora  */
+.navbar-toggler:focus {
+    box-shadow: none;
+    border: none;
+}
+
+.navbar-nav .nav-link {
+    transition: all 0.3s ease-in-out;
+}
+
+/* Navbar er nav e zokhon hover hobe othoba active hobe */
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link.active {
+    color: var(--secondary-color);
+}
+
+.nav-underline .nav-link.active {
+    color: var(--secondary-color) !important;
+    font-weight: unset;
+}
+
+/* Dropdown er somoy button er thik majhkhane menu asbe */
+.dropdown-menu.show {
+    top: 3.15rem;
+    left: 50%;
+    transform: translateX(-50%);
+    color: var(--text-primary);
+}
+
+.dropdown-menu {
+    min-width: 8rem;
+    border-radius: 10px;
+
+}
+
+.dropdown-menu .dropdown-item {
+    font-weight: bold;
+    color: var(--text-primary);
+    transition: all 0.5s ease-in-out;
+}
+
+.dropdown-menu .dropdown-item:hover {
+    background-color: var(--primary-color);
+    color: white;
+    border-radius: 5px;
+}
+
+.btn {
+    font-weight: bold;
+    font-size: large;
+    letter-spacing: .1rem;
+    color: var(--primary-color);
+    border: .12rem solid var(--secondary-color);
+    transition: all 0.3s ease-in-out;
+}
+
+.btn:hover {
+    background-color: var(--primary-color);
+    border: .12rem solid var(--secondary-color);
+    color: white;
+
+}
+
+/* Welcome section here  */
+
+.welcome {
+    margin-top: 7rem;
+
+}
+
+.welcome h2 {
+    font-weight: bolder;
+    letter-spacing: .4rem;
+
+}
+
+.welcome img {
+    height: 23rem;
+}
+
+.welcome .title {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 21rem;
+}
+
+.welcome p {
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.8rem;
+    letter-spacing: 0.1rem;
+}
+
+.welcome .btn {
+    letter-spacing: .1rem;
+}
+
+/* Service section */
+.service .row {
+    margin-bottom: 3rem;
+}
+
+.service .container {
+    background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)),
+        url('../img/service/image.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 10px;
+}
+
+.service h1 {
+    padding-top: 1.5rem;
+    padding-bottom: 1rem;
+    width: 100%;
+    font-weight: bold;
+}
+
+.service .subtitle {
+    padding: 1rem 8rem;
+    color: rgb(16, 41, 78);
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 200;
+    font-size: 1.2rem;
+}
+
+.service .card {
+    position: relative;
+    top: 10rem;
+    border-radius: 8px;
+    cursor: pointer;
+    height: auto;
+    transition: all 0.4s ease-in-out;
+}
+
+.service .card:hover {
+    background-color: #62cc11;
+    color: white;
+    box-shadow: 0px 0px 8px 4px rgba(0, 0, 0, 0.3);
+    border: 1px solid var(--primary-color);
+    transform: translateY(-20px);
+
+}
+
+.service .card i {
+    padding: 1rem;
+}
+
+.service .card-title {
+    color: var(--primary-color);
+    font-weight: bold;
+    padding-bottom: .5rem;
+}
+
+.service .card-text {
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(16, 41, 78);
+}
+
+.service .my-btn {
+    border: none;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    letter-spacing: .03rem;
+    text-decoration: none;
+    transition: all 0.3s ease-in-out;
+}
+
+.service .my-btn i {
+    margin-left: -1rem;
+    position: relative;
+    top: 2px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.service .my-btn:hover i,
+.service .my-btn:hover {
+    transform: translateX(10px);
+    color: #004774;
+}
+
+
+/* Course section  */
+.course {
+    margin-top: 13rem;
+}
+
+.course .container {
+    border: 1px solid rgb(231, 231, 231);
+    border-radius: 8px;
+}
+
+.course .title {
+    font-weight: bold;
+    background-color: #addf86;
+    padding-top: .5rem;
+    padding-bottom: 1rem;
+    border-bottom-right-radius: 15rem;
+    border-bottom-left-radius: 15rem;
+}
+
+.course img {
+    height: 10rem;
+    margin-top: .69rem;
+    border-radius: 5px;
+}
+
+.course .card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.course .card {
+    cursor: pointer;
+    transition: all 0.4s ease-in-out;
+}
+
+.course .card:hover {
+    border: .12rem solid var(--secondary-color);
+    transform: scale(1.05);
+    box-shadow: 0px 0px 8px 4px rgba(0, 0, 0, 0.3);
+}
+
+.course .card-title {
+    font-weight: bold;
+    color: var(--primary-color);
+    transition: all 0.4s ease-in-out;
+}
+
+.course .card-title:hover {
+    color: var(--secondary-color);
+}
+
+.course .btn {
+    margin-top: 1.1rem;
+}
+
+.course .card-text {
+    position: relative;
+    top: 1.7rem;
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+/* Counter Section  */
+
+.achivement-counter .card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    margin-top: .4rem;
+    padding: 1rem;
+    cursor: pointer;
+    transition: all 0.4s ease-in-out;
+}
+
+.achivement-counter .card:hover {
+    border: .15rem solid var(--primary-color);
+    box-shadow: 0px 0px 8px 2px rgba(0, 0, 0, 0.3);
+}
+
+.achivement-counter .card .counter-box {
+    margin-top: .5rem;
+}
+
+.achivement-counter .row {
+    background-color: #addf86;
+    padding: 2rem;
+    border-radius: 8px;
+}
+
+.achivement-counter .title {
+    font-weight: bold;
+    letter-spacing: .24rem;
+}
+
+.achivement-counter h3,
+.achivement-counter p {
+    font-weight: bolder;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+
+/* Testomonial Section */
+
+.testomonial .subtitle {
+    font-size: 1.13rem;
+    font-weight: bold;
+    letter-spacing: .13rem;
+    color: rgb(25, 117, 25);
+}
+
+.testomonial .title {
+    font-weight: bolder;
+    letter-spacing: .27rem;
+    color: var(--primary-color);
+}
+
+.testomonial .card img {
+    height: 13rem;
+    width: 13rem;
+}
+
+.testomonial .card {
+    margin-top: 2rem;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    padding: 1rem;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.testomonial .card-body .quote {
+    color: rgb(25, 117, 25);
+    margin-top: 1rem;
+}
+
+.testomonial .card-body .blockquote-footer {
+    padding-top: 2rem;
+    font-weight: bolder;
+}
+
+.testomonial .carousel-indicators button {
+    background-color: var(--primary-color);
+    width: .85rem;
+    height: .85rem;
+    margin: 0rem .5rem;
+}
+
+.testomonial .carousel-indicators .active {
+    background-color: #58b411;
+}
+
+/* Footer Section */
+
+.main-footer {
+    background-color: rgb(242, 255, 244);
+    margin-top: 5rem;
+    box-shadow: 0px -1px 12px 1px rgba(0, 0, 0, 0.2);
+}
+
+.main-footer a {
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 550;
+    letter-spacing: .07rem;
+    color: var(--text-secondary);
+    display: inline-block;
+    transition: all 0.4s ease-in-out;
+}
+
+.main-footer a:hover {
+    text-decoration: underline;
+    color: var(--secondary-color);
+    transform: scaleX(1.07);
+}
+
+.main-footer .title {
+    font-weight: bolder;
+}
+
+.main-footer .menubar {
+    margin-top: 2rem;
+    align-items: center;
+}
+
+.main-footer .newsletter .btn {
+    margin-top: .7rem;
+}
+
+.main-footer .newsletter .title {
+    font-weight: bold;
+    font-size: 1.5rem;
+    letter-spacing: .3rem;
+}
+.main-footer .newsletter .subtitle {
+    font-weight: bold;
+    font-size: 1rem;
+    letter-spacing: .1rem;
+}
+
+.main-footer .newsletter .form-floating .form-control {
+    border: 1px solid var(--secondary-color);
+    padding-right: 4rem;
+}
+
+.form-floating .form-control {
+    color: var(--secondary-color);
+    font-size: normal;
+}
+
+.form-control:focus {
+    box-shadow: none;
+    border: 1px solid var(--secondary-color);
+}
+
+.main-footer .newsletter .form-floating .close-btn {
+    position: absolute;
+    top: 17%;
+    right: 6%;
+    font-size: 1.03rem;
+    cursor: pointer;
+    color: var(--primary-color);
+    transition: all 0.4s ease-in-out;
+}
+
+.main-footer .newsletter .form-floating .close-btn:hover {
+    color: var(--secondary-color);
+}
+
+.form-label {
+    color: #057dc7;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.main-footer .newsletter .form-floating input ~ label,
+.main-footer .newsletter .form-floating input:focus ~ label {
+    color: #057dc7;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.main-footer .copyright p{
+    font-weight: bold;
+    letter-spacing: .14rem;
+}
+
+/* =========================================== */
+/* Register section */
+/* =========================================== */
+
+
+.register{
+    margin-top: 8.7rem;
+}
+
+.register .card .title{
+    font-weight: bolder;
+    margin-top: .35rem;
+    margin-bottom: 1.2rem;
+}
+
+.register .card{
+    border-radius: 10px;
+    border: 1px solid var(--secondary-color);
+    box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.2);
+    max-width: 25rem;
+} 
+
+.register .form-group .form-floating .form-control {
+    border: 1px solid var(--secondary-color);
+    padding-right: 3.5rem;
+}
+
+.register .card .form-floating,
+.register .card .form-ckeck,
+.register .card .form-button,
+.register .card .form-another-btn{
+    margin: 1rem 0rem;
+}
+
+.register .form-group .form-floating input ~ label,
+.register .form-group .form-floating input:focus ~ label {
+    color: #057dc7;
+    font-size: 1rem;
+}
+
+.register .form-group .form-floating .close-btn {
+    position: absolute;
+    top: 32%;
+    right: 6%;
+    font-size: 1.03rem;
+    cursor: pointer;
+    color: var(--primary-color);
+    transition: all 0.4s ease-in-out;
+}
+
+.register .form-group .form-floating .toggle-pass-btn {
+    position: absolute;
+    top: 32%;
+    right: 5%;
+    font-size: .9rem;
+    cursor: pointer;
+    color: var(--primary-color);
+    transition: all 0.4s ease-in-out;
+}
+
+.register .form-group .form-floating .close-btn:hover,
+.register .form-group .form-floating .toggle-pass-btn:hover {
+    color: var(--secondary-color);
+}
+
+.register a{
+    text-decoration: none;
+    transition: all .3s ease-in;
+    display: inline-block;
+}
+
+.register a:hover{
+    text-decoration: underline;
+    color: var(--secondary-color);
+    transform: translateX(3px);
+}
+
+.register .form-check{
+    color: var(--text-secondary);
+}
+
+.register .form-check input{
+    border: 1px solid var(--secondary-color);
+    cursor: pointer;
+}
+
+.register .form-check input:focus{
+    box-shadow: none;
+}
+
+.register .form-another-btn p{
+    font-weight: bold;
+    letter-spacing: .08rem;
+}
+
+#forgot {
+display: flex;
+justify-content: space-between;
+letter-spacing: .1rem;
+font-size: 1.08rem;
+}
+
+@media (max-width: 350px) {
+    #forgot {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+
+/* =============================================== */
+/* Contact Section */
+/* =============================================== */
+
+.header {
+    margin-top: 6rem;
+}
+
+.header .title{
+    font-weight: bolder;
+    letter-spacing: .13rem;
+}
+
+.header .breadcrumb{
+    display: flex;
+    justify-content: center;
+}
+
+.header .breadcrumb a{
+    text-decoration: none;
+}
+
+.contact {
+    margin-top: 2.5rem;
+}
+
+.contact .row .image img{
+    height: 30rem;
+    border-radius: 10px;
+}
+
+.contact .row .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.contact .row .content .form-group .form-floating .form-control ~ label,
+.contact .row .content .form-group .form-floating .form-control:focus ~ label {
+    color: #057dc7;
+    font-size: 1rem;
+}
+
+.contact .row .content .form-group .form-floating .close-btn {
+    position: absolute;
+    top: 32%;
+    right: 6%;
+    font-size: 1.03rem;
+    cursor: pointer;
+    color: var(--primary-color);
+    transition: all 0.4s ease-in-out;
+}
+
+.contact .row .content .form-group .form-floating .close-btn:hover {
+    color: var(--secondary-color);
+}
+
+.contact .row .content .form-group .form-floating,
+.contact .row .content .form-group .form-button {
+    margin: .5rem 0rem;
+}
+
+.contact .row .content .form-group .form-floating .form-control {
+    border: 1px solid var(--primary-color);
+    padding-right: 4rem;
+}
+
+.contact .row .content .form-group .form-button .btn {
+    border: 1px solid var(--primary-color);
+    margin-top: .7rem;
+}
+
+
+/* =============================================================== */
+/* Result Sectiion */
+/* ================================================================= */
+
+.result-form {
+    margin-top: 3rem;
+}
+
+.result-form .form-group .form-control,
+.result-form .form-group select {
+    height: 3rem;
+    width: 13rem;
+    margin: 1rem 0rem;
+    border: 1px solid var(--secondary-color);
+    border-radius: 5px;
+    padding: .5rem;
+    color: var(--text-secondary);
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+.result-form .form-group select {
+    cursor: pointer;
+    outline: none;
+}
+
+.result-form .form-group select option {
+    color: var(--secondary-color);
+}
+
+.result-form .form-group .form-button .btn {
+    margin-top: 1rem;
+    border: 1px solid var(--primary-color);
+}
+
+.result-table {
+    margin-top: 4rem;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.result-table .container {
+    border: 1px solid var(--secondary-color);
+    padding: 1.5rem;
+    border-radius: 10px;
+}
+
+.result-table .container .row .table thead th,
+.result-table .container .row .table tbody td,
+.result-table .container .row .table tbody th {
+    color: var(--text-secondary);
+}

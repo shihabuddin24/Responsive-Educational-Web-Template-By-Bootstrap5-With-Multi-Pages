@@ -1,0 +1,134 @@
+@media (max-width: 992px) {
+    .dropdown {
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+
+    .dropdown-menu.show {
+        top: 3.7rem;
+    }
+
+    /* Under line ti mobile screen e boro hoye giyechilo */
+
+    .nav-underline {
+        width: 6rem;
+    }
+
+    /* Welcome Section  */
+
+    .welcome .title {
+        margin-top: 1rem;
+        height: auto;
+    }
+    .welcome img {
+        height: auto;
+    }
+    .welcome h2 {
+        font-weight: normal;
+        letter-spacing: normal;
+    }
+    .welcome p {
+        line-height: normal;
+        letter-spacing: normal;
+    }
+
+    /* Service section  */
+
+    .service .card {
+        width: 20rem;
+    }
+
+    .service .card {
+        position: relative;
+        top: 1rem;
+    }
+
+    .service .subtitle {
+        padding: 0;
+        color: rgb(16, 41, 78);
+        font-family: Arial, Helvetica, sans-serif;
+        width: 100%;
+    }
+
+    /* Course section  */
+
+    .course {
+        margin-top: 4rem;
+    }
+
+    .course .card {
+        width: 20rem;
+    }
+
+    /* Achivement Counter Section */
+
+.achivement-counter{
+    margin-top: 2rem;
+}
+
+.achivement-counter .card{
+    width: 10rem;
+}
+
+/* Testomonial Section */
+
+.testomonial .card{
+    display: flex;
+    flex-direction: column;
+}
+
+.testomonial .card img{
+    height: 10rem;
+    width: 10rem; 
+}
+
+/* Footer Section  */
+.main-footer .menubar{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+}
+
+.main-footer .newsletter{
+    margin-top: .5rem;
+}
+.main-footer .social-media{
+    margin-top: 2rem;
+}
+
+/* Sign-up Section  */
+
+.sign-up .form-group .form-floating input ~ label,
+.sign-up .form-group .form-floating input:focus ~ label {
+    color: #057dc7;
+    font-size: .8rem;
+    letter-spacing: .10rem;
+}
+
+
+/* Contact Section  */
+
+.contact .row .image img{
+    height: auto;
+}
+
+.contact .row .content {
+    margin-top: 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    /* text-align: center; */
+}
+
+/* Result Section */
+
+.result-form .form-group .form-control,
+.result-form .form-group select {
+    width: 100%;
+}
+
+
+}
