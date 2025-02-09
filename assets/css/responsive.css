@@ -145,5 +145,14 @@
     margin: .5rem 0rem;
 }
 
+/* About Section  */
+
+.teacher .container .teacher-area .carousel-inner .row {
+    height: auto;
+}
+
+.why-choose .choosen-header .title{
+    text-align: center;
+}
 
 }

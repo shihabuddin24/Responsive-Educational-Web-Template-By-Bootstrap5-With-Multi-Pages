@@ -818,3 +818,112 @@ font-size: 1.08rem;
 .notice-pagination .pagination .page-item a:hover {
     background-color: #c0e9a2;
 }
+
+/* About Section  */
+
+.teacher {
+    margin-top: 3rem;
+}
+
+.teacher .container .teacher-area .carousel-inner .row {
+    border: 1px solid var(--secondary-color);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: .1rem;
+    padding: .2rem;
+    height: 30rem;
+}
+
+.teacher .container .teacher-area .carousel-inner .row .card{
+    margin: 1rem;
+    height: auto;
+    width: 15.5rem;
+    cursor: pointer;
+}
+
+.teacher .container .teacher-area .carousel-inner .row .card .img-fluid{
+    height: 12rem;
+    width: 14rem;
+    padding: .5rem;
+    margin-top: .8rem;
+    border-radius: .9rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.teacher .container .teacher-area .carousel-inner .row .card .name{
+    color: var(--primary-color);
+    font-weight: bolder;
+}
+
+.teacher .container .teacher-area .carousel-inner .row .card .name{
+    color: var(--primary-color);
+    font-weight: bolder;
+}
+
+.teacher .container .teacher-area .carousel-inner .row .card .tag{
+    color: var(--text-secondary);
+    font-weight: bold;
+}
+
+.teacher .container .teacher-area button i{
+    color: var(--secondary-color);
+    margin-left: .5rem;
+}
+
+.teacher  .carousel-control-prev,
+.teacher .carousel-control-next {
+    width: 10%;
+}
+
+.why-choose{
+    margin-top: 2rem;
+}
+
+.why-choose .choosen-header .title{
+    font-weight: bolder;
+    letter-spacing: .24rem;
+}
+
+.why-choose .choosen-header .subtitle{
+    font-weight: bold;
+    letter-spacing: .13rem;
+}
+
+.why-choose .aside .description{
+    font-weight: bold;
+}
+
+.why-choose .row .point .content{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    
+}
+.why-choose .point .icon i{
+    font-weight: bold;
+    color: #98d867;
+    position: relative;
+    top: 5%;
+}
+
+.why-choose .point .content .title{
+    font-weight: bolder;
+    font-size: 1.2rem;
+    margin-left: 1rem;
+    color: var(--primary-color);
+}
+
+.why-choose .point .content .subtitle{
+    font-weight: bold;
+    font-size: 1rem;
+    margin-left: 1rem;
+    color: var(--text-secondary);
+    margin-top: -.6rem;
+}
