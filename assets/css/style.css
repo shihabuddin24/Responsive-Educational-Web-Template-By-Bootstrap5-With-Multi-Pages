@@ -577,8 +577,8 @@ p {
 #forgot {
 display: flex;
 justify-content: space-between;
-letter-spacing: .1rem;
-font-size: 1.08rem;
+letter-spacing: .02rem;
+font-size: 1.04rem;
 }
 
 @media (max-width: 350px) {
