@@ -31,16 +31,6 @@ document.addEventListener("DOMContentLoaded", function () {
             }
         });
 
-        // Mobile-friendly dropdown open on single click
-        // toggle.addEventListener("click", function (e) {
-        //     e.preventDefault();
-        //     let isShown = menu.classList.contains("show");
-        //     document.querySelectorAll(".dropdown-menu").forEach(m => m.classList.remove("show"));
-        //     if (!isShown) {
-        //         menu.classList.add("show");
-        //     }
-        // });
-
         // Hide dropdown on item click (both desktop & mobile)
         menu.querySelectorAll(".dropdown-item").forEach(item => {
             item.addEventListener("click", function () {
